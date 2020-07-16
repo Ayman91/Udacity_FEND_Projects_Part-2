@@ -1,0 +1,98 @@
+
+.heading {
+  margin: 0;
+  text-align: center;
+  background-color: rgba(58, 127, 166, 1);
+  padding: 0.5cm;
+  color: #FFF;
+}
+
+.map {
+  margin: 0;
+  width: 85%;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-input {
+  width: 15%;
+  background-color:rgba(58, 127, 166, 1);
+  height: 100vh;
+}
+
+.text-input input {
+  width: 91%;
+  line-height: 0.8cm;
+  padding-left: 20px;
+  border: 1px solid #f5f5f5;
+  font-size: 17px;
+  color: gray;
+}
+
+.text-input ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.text-input li {
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  color: white;
+  line-height: 2rem;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px
+}
+
+*:focus {
+  outline: 4px solid #02b3c0;
+}
+
+
+@media screen and (max-width: 800px) {
+  .text-input-hidden {
+    display: none;
+  }
+
+  .text-input {
+    position: absolute;
+    width: 4.5cm;
+    z-index: 2;
+  }
+
+  .text-input input {
+    width: 2.55cm;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    top: 13px ;
+  }
+
+  .map {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heading {
+    font-size: medium;
+    padding: 1em;
+  }
+
+  .menu {
+    top: 0!important;
+  }
+
+}
+
+li:focus {
+  background-color: #9f8ef9;
+}
+
+
